@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a687a058-12b4-4195-b450-ce5adfba712a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/model/BearPagedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/model/BeerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/model/BeerStyleEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/controller/BeerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/service/BeerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/service/BeerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mssc-beer-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mssc-beer-service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.haitao.msscbeerservice.web.service" />
       <recent name="com.haitao.msscbeerservice.web.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -91,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575485174645</updated>
-      <workItem from="1575485182029" duration="3989000" />
+      <workItem from="1575485182029" duration="6388000" />
     </task>
     <task id="LOCAL-00001" summary="Inital project add. Close #1">
       <created>1575487275841</created>
@@ -107,21 +103,32 @@
       <option name="project" value="LOCAL" />
       <updated>1575487355457</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add web data model Close #1">
+      <created>1575489884542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575489884542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Inital project add. Close #1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital project add. Close #1" />
+    <MESSAGE value="add web data model Close #1" />
+    <option name="LAST_COMMIT_MESSAGE" value="add web data model Close #1" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2721" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1575489088223">
+    <state x="2721" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1575493439579">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2721" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489088223" />
+    <state x="2721" y="265" width="374" height="575" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575493439579" />
     <state x="2754" y="444" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575488256573">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -130,17 +137,37 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2491" y="210" width="824" height="684" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575488097358" />
+    <state x="2675" y="186" width="476" height="774" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575493598196">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2675" y="186" width="476" height="774" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575493598196" />
     <state x="2646" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1575487196335">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2646" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575487196335" />
-    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2" timestamp="1575487355311">
+    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2" timestamp="1575489884225">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575487355311" />
-    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575487357552">
+    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489884225" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1575490339024">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575487357552" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575490339024" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1575490339024">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575490339024" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1575490339024">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575490339024" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1575490339024">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575490339024" />
+    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575489886705">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575489886705" />
   </component>
 </project>
