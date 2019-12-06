@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a687a058-12b4-4195-b450-ce5adfba712a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/domain/Bear.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/model/BeerPagedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/haitao/msscbeerservice/web/model/BeerPagedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,6 +172,7 @@
       <workItem from="1575506268576" duration="3179000" />
       <workItem from="1575551197890" duration="1846000" />
       <workItem from="1575553524669" duration="7335000" />
+      <workItem from="1575658450455" duration="2622000" />
     </task>
     <task id="LOCAL-00001" summary="Inital project add. Close #1">
       <created>1575487275841</created>
@@ -205,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575564165668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="revert back the pom file">
+      <created>1575658611872</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575658611872</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -226,7 +237,8 @@
     <MESSAGE value="add web data model Close #1" />
     <MESSAGE value="add beer controller Close #3" />
     <MESSAGE value="clean up some wrong files" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up some wrong files" />
+    <MESSAGE value="revert back the pom file" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert back the pom file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -250,10 +262,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2646" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575487196335" />
-    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2" timestamp="1575564165300">
+    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2" timestamp="1575658611783">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575564165300" />
+    <state x="2319" y="149" width="1179" height="807" key="CommitChangelistDialog2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575658611783" />
     <state x="2696" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1575562155786">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -274,14 +286,14 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1807" height="269" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575553448290" />
-    <state x="2446" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1575551461464">
+    <state x="2446" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog" timestamp="1575660829749">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2446" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575551461464" />
-    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575564168954">
+    <state x="2446" y="210" width="924" height="684" key="Maven.ArtifactSearchDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575660829749" />
+    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1575658614451">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575564168954" />
+    <state x="2508" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1575658614451" />
     <state x="2569" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1575553546077">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
