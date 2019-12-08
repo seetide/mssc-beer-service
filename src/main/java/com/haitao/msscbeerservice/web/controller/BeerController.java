@@ -5,6 +5,7 @@ import com.haitao.msscbeerservice.web.service.BeerService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
@@ -26,7 +27,7 @@ public class BeerController {
     }
 
     @PostMapping // Post - create new beer
-    public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
+    public ResponseEntity saveNewBeer(@RequestBody @Validated BeerDto beerDto) {
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
 
         HttpHeaders headers = new HttpHeaders();
@@ -36,7 +37,7 @@ public class BeerController {
     }
 
     @PutMapping("/{beerId}")
-    public ResponseEntity updateBeer(@RequestBody BeerDto  beerDto, @PathVariable UUID bearId) {
+    public ResponseEntity updateBeer(@RequestBody @Validated BeerDto  beerDto, @PathVariable UUID bearId) {
         //todo  implement
         beerService.updateBeer(bearId, beerDto);
         return new ResponseEntity(HttpStatus.NO_CONTENT);
