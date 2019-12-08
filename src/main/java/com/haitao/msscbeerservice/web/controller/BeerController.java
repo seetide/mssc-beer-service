@@ -12,7 +12,9 @@ import java.util.UUID;
 @RequestMapping("/api/v1/beer")
 @RestController
 public class BeerController {
+
     private final BeerService beerService;
+
     public BeerController(BeerService beerService) {
         this.beerService = beerService;
     }
@@ -23,7 +25,7 @@ public class BeerController {
         return new ResponseEntity<>(BeerDto.builder().id(beerId).build(), HttpStatus.OK);
     }
 
-    @PostMapping
+    @PostMapping // Post - create new beer
     public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
         BeerDto savedDto = beerService.saveNewBeer(beerDto);
 
